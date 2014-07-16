@@ -1,0 +1,68 @@
+/*
+Theme Name: Basic Theme Example
+Theme URI: https://github.com/tahiryasin/basic-theme-example
+Version: 0.1.0
+Description: Basic theme with minimum files.
+Author: Tahir Yasin
+Author URI: http://about.me/tahiryasin
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: basic,  example, training
+Text Domain: basic-theme-example
+*/
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width:900px;
+    margin: 0 auto;
+ }
+
+.wrapper{width:100%; float:left;}
+#header, #content, #sidebar, #footer{border: 1px solid #000;padding: 10px; margin: 1px;}
+
+#content, #sidebar{min-height: 450px;}
+#content{width: 70%; float: left;}
+#sidebar{width: 24.5%; float:right;}
+#footer{clear:both;}
+
+
+.main-navigation ul.nav-menu,
+.main-navigation div.nav-menu > ul {
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    display: inline-block !important;
+    text-align: left;
+    width: 100%;
+}
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+.main-navigation li a,
+.main-navigation li {
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+}
+
+.main-navigation li {
+    margin: 0 40px 0 0;
+    margin: 0 2.857142857rem 0 0;
+    position: relative;
+}
+.main-navigation li ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
